@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="scripts.js" type="text/javascript" defer></script>
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <title>Library</title>
+</head>
+<body>
+    <div class="header">Library</div>
+    <div class="addBook">
+        <button class="addBookBtn">Add Book</button>
+    </div>
+    <div class="container">
+    </div>
+
+    <dialog>
+        <form action="/submit" method="POST">
+            <ul>
+                <li>
+                    <label for="title">Title:</label>
+                    <input type="text" id="title" name="title">
+                </li>
+                <li>
+                    <label for="author">Author:</label>
+                    <input type="text" id="author" name="author">
+                </li>
+                <li>
+                    <label for="numPages">Pages:</label>
+                    <input type="text" id="numPages" name="numPages">
+                </li>
+                <li>
+                    <label for="isRead">Read:</label>
+                    <select name="isRead" id="isRead">
+                        <option value="yes">Yes</option>
+                        <option value="no" selected>No</option>
+                    </select>
+                </li>
+                <li class="btnOptions">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </li>
+            </ul>
+        </form>
+
+        <button autofocus>Close</button>
+    </dialog>
+</body>
+</html>
