@@ -10,8 +10,8 @@
 </head>
 <body>
     <div class="header">Library</div>
-    <div class="addBook">
-        <button class="addBookBtn">Add Book</button>
+    <div class="add-book">
+        <button class="add-book-btn" onclick="dialog.showModal()">Add Book</button>
     </div>
     <div class="container">
     </div>
@@ -29,23 +29,23 @@
                 </li>
                 <li>
                     <label for="numPages">Pages:</label>
-                    <input type="text" id="numPages" name="numPages">
+                    <input type="text" id="num-pages" name="numPages">
                 </li>
                 <li>
                     <label for="isRead">Read:</label>
-                    <select name="isRead" id="isRead">
+                    <select name="isRead" id="is-read">
                         <option value="yes">Yes</option>
                         <option value="no" selected>No</option>
                     </select>
                 </li>
-                <li class="btnOptions">
+                <li class="btn-options">
                     <button type="submit">Submit</button>
                     <button type="reset">Reset</button>
                 </li>
             </ul>
         </form>
 
-        <button autofocus>Close</button>
+        <button autofocus onclick="dialog.close()">Close</button>
     </dialog>
 </body>
 </html>

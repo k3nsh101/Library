@@ -9,7 +9,7 @@ body {
     padding: 30px;
 }
 
-.addBook {
+.add-book {
     text-align: center;
 }
 
@@ -74,7 +74,7 @@ input:focus {
     border-color: #2d2c2c;
 }
 
-.btnOptions {
+.btn-options {
     display: flex;
     justify-content: center;
     gap: 20px;
