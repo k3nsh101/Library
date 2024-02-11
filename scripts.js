@@ -76,18 +76,18 @@ function displayLibrary(startIndex = 0){
         let options = document.createElement('div');
         options.classList.add('options');
 
-        let removeBook = document.createElement('button');
-        removeBook.classList.add('removeBook');
-        removeBook.textContent = 'Remove';
-
         let read = document.createElement('button');
         read.classList.add('btn-read');
         read.textContent = 'Read';
+
+        let removeBook = document.createElement('button');
+        removeBook.classList.add('removeBook');
+        removeBook.textContent = 'Remove';
         
         container.appendChild(card);
 
         card.append(title, author, numPages, isRead, options);
-        options.append(removeBook, read)
+        options.append(read, removeBook)
     }
     
     btnRemove = document.querySelectorAll('.removeBook');
